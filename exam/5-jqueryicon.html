@@ -1,55 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <script src="js/jquery-1.12.4.min.js"></script>
-  <script src="js/jquery-ui.min.js"></script>
-  <link rel="stylesheet" href="js/jquery-ui.min.css" media="screen" title="no title" charset="utf-8">
-  <title>标签组</title>
-  <style>
-  #menu {
-    width: 600px;
-    height: 150px;
-  }
-  #menu li {
-    float: left;
-  }
-  </style>
-  <script type="text/javascript">
-    $(function(){
-      $('#menu').menu();
-    })
-  </script>
+    <meta charset="UTF-8">
+    <title>5</title>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <script>
+        $(function () {
+            $('#tag').tabs();
+        })
+    </script>
 </head>
 <body>
-<ul id="menu">
-  <li>
-    <div>
-      hello
+    <div id="tag">
+        <ul>
+            <li><a href="#tag1">hello</a></li>
+            <li><a href="#tag2">hello</a></li>
+            <li><a href="#tag3">hello</a></li>
+            <li><a href="#tag4">hello</a></li>
+        </ul>
+        <div id="tag1">11111111111111</div>
+        <div id="tag2">22222222222222</div>
+        <div id="tag3">33333333333333</div>
+        <div id="tag4">44444444444444</div>
     </div>
-  </li>
-  <li>
-    <div>
-      hello
-    </div>
-  </li>
-  <li>
-    <div>
-      hello
-    </div>
-  </li>
-  <li>
-    <div>
-      hello
-    </div>
-  </li>
-  <p>
-    dsfsdfdskgdfgdfgdfssadasdasdasdasdsadasdasdasasdasdadasfd</br>
-    dsfsdfdskgdfgdfgdfsdasdasdasdasdqfdfggfhghjghjghjghjghjgh</br>
-    dsfsdfdskgdfgdfgdfsghjghj</br>
-  </p>
-</ul>
 </body>
 </html>
