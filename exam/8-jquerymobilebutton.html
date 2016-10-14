@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery Mobile</title>
+</head>
+<link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="./css/jquery.mobile-1.4.5.min.css" media="screen" title="no title">
+<script src="./js/jquery-1.12.4.min.js"></script>
+<script src="./js/jquery.mobile-1.4.5.min.js"></script>
+<script type="text/javascript">
+$(function () {
+  $('ab').button({
+    inline: true,
+    theme: "b",
+  });
+  $('button').bind('tap', function(){
+    $.mobile.changePage('#page2');
+  })
+})
+
+</script>
+<body>
+  <div data-role='page'>
+    <div data-role="header"><h1>标题</h1></div>
+    <div data-role="content">
+      <button type="button" name="button" data-icon="arrow-l" data-iconpos="right">左箭头图标</button>
+      <button type="button" name="button" data-icon="arrow-r" data-iconpos="right">左箭头图标</button>
+      <button type="button" name="button" data-icon="arrow-u" data-iconpos="right">左箭头图标</button>
+      <button type="button" name="button" data-icon="arrow-d" data-iconpos="right">左箭头图标</button>
+      <button type="button" name="button" data-icon="plus" data-iconpos="right">左箭头图标</button>
+      <button type="button" name="button" data-icon="minus" data-iconpos="right">左箭头图标</button>
+      <button type="button" name="button" data-icon="check" data-iconpos="right">左箭头图标</button>
+      <button type="button" name="button" data-icon="delete" data-iconpos="right">左箭头图标</button>
+    </div>
+    <div data-role="footer"><h4>底部</h4></div>
+  </div>
+</body>
+</html>

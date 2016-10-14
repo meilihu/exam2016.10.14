@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="js/jquery-3.1.1.min.js">
+  </script>
+  <script src="js/jquery-ui.min.js">
+  </script>
+  <link rel="stylesheet" href="css/jquery-ui.min.css" media="screen" title="no title" charset="utf-8">
+  <style>
+  div {
+    width: 100px;
+    height: 100px;
+    background: blue;
+  }
+  </style>
+  <script type="text/javascript">
+    $(function(){
+      // $('button').button();
+      $('#btn-1').click(function(){
+        if($('div').is(':hidden')){
+          $('div').show("shake",{direction: 'right'},2000,function(){
+            })
+        }else {
+          $('div').hide("shake",{direction: 'right'},2000,function(){
+          });
+        }
+      //   $('div').hide("shake",{direction: 'right'},2000,function(){
+      //   })
+      // $('#btn-2').click(function(){
+      //   $('div').show("shake",{direction: 'right'},2000,function(){
+      //   })
+      // })
+      });
+    });
+  </script>
+</head>
+<body>
+  <button id="btn-1">隐藏/显示</button>
+  <hr>
+  <div></div>
+</body>
+</html>

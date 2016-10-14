@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>下拉菜单</title>
+  <style>
+  .menu {
+    margin: 5px;
+    width: 250px;
+    height: 400px;
+    background-color: gray;
+  }
+  .menu > div {
+    margin: 5px auto;
+    width: 220px;
+    height: auto;
+  }
+  .menu > div > h3 {
+  margin: 5px auto;
+  border: 1px solid black;
+  background-color: lightgray;
+  }
+  .menu > div > p {
+    margin: 5px auto;
+    height: 25px;
+    background-color: black;
+    color: white;
+    line-height: 25px;
+    display: none;
+  }
+  </style>
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script>
+  $(function(){
+    $('h3').click(function(){
+      $(this).css('background-color','orange');
+      var bro = $(this).nextAll();
+      if($(bro).is(':hidden')){
+
+        $(bro).css('display','block');
+      }else {
+        $(bro).css('display','none');
+      }
+      $(bro).hover(function(){
+        $(this).css('background-color','yellow');
+      });
+    });
+    // $('h3').hover(function(){
+    //   var bro = $(this).nextAll();
+    //   $(bro).css('display','none');
+    // });
+    $("h3").mouseout(function(){
+      $(this).css('background-color','lightgray');
+      var bro = $(this).nextAll();
+      $(bro).mouseout(function(){
+        $(bro).css('background-color','black');
+      })
+    });
+  })
+  </script>
+</head>
+<body>
+  <div class="menu">
+    <div class="one">
+      <h3>asdasda</h3>
+      <p>dsadad</p>
+      <p>dsadad</p>
+      <p>dsadad</p>
+      <p>dsadad</p>
+    </div>
+    <div class="two">
+      <h3>asdasda</h3>
+      <p>dsadad</p>
+      <p>dsadad</p>
+      <p>dsadad</p>
+      <p>dsadad</p>
+    </div>
+    <div class="three">
+      <h3>asdasda</h3>
+      <p>dsadad</p>
+      <p>dsadad</p>
+      <p>dsadad</p>
+      <p>dsadad</p>
+    </div>
+    <div class="four">
+      <h3>asdasda</h3>
+      <p>dsadad</p>
+      <p>dsadad</p>
+      <p>dsadad</p>
+      <p>dsadad</p>
+    </div>
+  </div>
+</body>
+</html>

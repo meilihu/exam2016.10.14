@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" media="screen" title="no title">
+  <script src="js/jquery-1.12.4.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+  <style>
+  #diabtm {
+    margin-left: 188px;
+  }
+  </style>
+  <script type="text/javascript">
+  $(function(){
+    $('#diachk').click(function(){
+      $('a').dialog('close');
+    })
+  })
+  </script>
+  </script>
+</head>
+<body>
+<div data-role='page' id="page1">
+  <div data-role="header" data-position="fixed"></div>
+
+  <div role="main">
+  <a href="#page2" data-rel="dialog">对话框</a>
+  </div>
+
+  <div data-role="footer" data-position="fixed"></div>
+</div>
+
+
+<div data-role='page' id="page2">
+  <div data-role="header" data-position="fixed" class="ui-btn-right"><h1>标题</h1></div>
+
+  <div role="main">
+  <p>内容</p>
+  </div>
+
+  <div data-role="footer" data-position="fixed">
+    <button id="diachk">确定</button>
+    <button id="diabtm">Cancel</button>
+  </div>
+</div>
+</body>
+</html>
